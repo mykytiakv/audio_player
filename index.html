@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Player</title>
+    </head>
+    <body>
+        <h1>Audio Player</h1>
+        <div id="main">
+            <audio id="audioPlayer"></audio>
+            
+            <div class="player">
+                <button type="button" id="previousButton"></button>
+                <button type="button" id="playButton" class="play"></button>
+                <button type="button" id="nextButton"></button>
+                <div id="defaultBar">                        
+                    <div id="progressBar">
+                        <div class="timeBar">
+                            <span id="currentTime">0:00</span> 
+                            <span id="fullDuration">0:00</span> 
+                        </div>                           
+                    </div>                                               
+                </div>
+                <button type="button" id="muteButton" class="mute"></button>                    
+                <input type="range" id="volume" value="100"/>                   
+            </div>
+            
+            <div class="list">
+                <ul id="playlist">
+                    <li class="currentSong"><a href="./music/Gecko.mp3">
+                    Gecko</a></li>
+                    <li><a href="./music/I_hear_you_calling.mp3">
+                    I hear you calling</a></li>                    
+                    <li><a href="./music/Robot_rock.mp3">
+                    Robot rock</a></li>
+                    <li><a href="./music/Starboy.mp3">
+                    Starboy</a></li>
+                    <li><a href="./music/Stronger.mp3">
+                    Stronger</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </body>
+</html>
